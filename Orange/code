@@ -1,0 +1,9 @@
+module orange_a ( 
+ input logic InputA, InputB, InputC, InputD, 
+ output logic OutputY 
+); 
+ assign OutputY = ~InputA | 
+ (InputA & InputB & InputD) | 
+ (InputA & InputC & ~InputD) | 
+ (InputA & ~InputB & ~InputC); 
+endmodule
