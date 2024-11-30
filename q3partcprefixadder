@@ -1,0 +1,16 @@
+//Question:c) What is the delay of your 32-bit prefix adder from part (a)? Assume that each two-input gate delay is 100 ps. 
+
+t_(prefix_adder)= t_pg + log2N(t_prefixblock) + t_xor (these all are gate delays)
+
+given that two-input gate delay is 100 ps :
+
+N=32 so therefore log2N= log_base2_32 
+therefore : 5
+
+Each stage requires a two-input gate delay of 100 ps.
+Total delay = 
+5×100=500 ps
+The sum computation requires XOR gates at the end, contributing another 1 gate delay (100 ps).
+
+
+Total delay=500ps+200ps=700ps.
